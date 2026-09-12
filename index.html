@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Veyra</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/icon" href="./Assists/images/logo.png">
+</head>
+<body>
+    <header
+  class="sticky top-0 z-50 w-full border-b border-black/10 bg-[#F5F1E8]/90 px-5 py-4 backdrop-blur-xl sm:px-8 lg:px-12"
+>
+  <div class="mx-auto flex max-w-7xl items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3">
+      <img
+        src=""
+        alt="Veyra Estates"
+        class="h-21 w-auto logo"
+      />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden items-center gap-8 lg:flex">
+      <a href="#home"
+         class="text-sm font-medium text-[#25221D] transition hover:text-[#A6814C] relative after:absolute after:content-[''] after:-left-full after:bottom-0 after:bg-[#A6814C] hover:after:left-0 after:w-full after:h-[2px] overflow-hidden after:transition-all after:duration-400 after:ease-in-out">
+        Home
+      </a>
+
+      <a href="#properties"
+         class="text-sm font-medium text-[#25221D] transition hover:text-[#A6814C] relative after:absolute after:content-[''] after:-left-full after:bottom-0 after:bg-[#A6814C] hover:after:left-0 after:w-full after:h-[2px] overflow-hidden after:transition-all after:duration-400 after:ease-in-out">
+        Properties
+      </a>
+
+      <a href="#services"
+         class="text-sm font-medium text-[#25221D] transition hover:text-[#A6814C] relative after:absolute after:content-[''] after:-left-[100%] after:bottom-0 after:bg-[#A6814C] hover:after:left-0 after:w-full after:h-[2px] overflow-hidden after:transition-all after:duration-400 after:ease-in-out">
+        Services
+      </a>
+
+      <a href="#about"
+         class="text-sm font-medium text-[#25221D] transition hover:text-[#A6814C] relative after:absolute after:content-[''] after:-left-full after:bottom-0 after:bg-[#A6814C] hover:after:left-0 after:w-full after:h-[2px] overflow-hidden after:transition-all after:duration-400 after:ease-in-out">
+        About
+      </a>
+
+      <a href="#contact"
+         class="text-sm font-medium text-[#25221D] transition hover:text-[#A6814C] relative after:absolute after:content-[''] after:-left-full after:bottom-0 after:bg-[#A6814C] hover:after:left-0 after:w-full after:h-[2px] overflow-hidden after:transition-all after:duration-400 after:ease-in-out">
+        Contact
+      </a>
+    </nav>
+
+    <!-- Right Side -->
+    <div class="flex items-center gap-3">
+
+      <button
+        class="hidden rounded-full border border-[#A6814C]/50 px-5 py-2.5 text-sm font-semibold text-[#25221D] transition hover:bg-[#A6814C] hover:text-white sm:block cursor-pointer"
+        id="login-btn"
+        >
+        Sign In
+      </button>
+
+      <button
+        id="mobile-menu-btn"
+        class="flex h-11 w-11 items-center justify-center rounded-xl border border-black/10 text-xl text-[#25221D] lg:hidden"
+      >
+        ☰
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden border-t border-black/10 pt-4 lg:hidden"
+  >
+    <nav class="flex flex-col gap-1">
+
+      <a href="#home"
+         class="rounded-xl px-4 py-3 text-sm font-medium text-[#25221D] hover:bg-black/5">
+        Home
+      </a>
+
+      <a href="#properties"
+         class="rounded-xl px-4 py-3 text-sm font-medium text-[#25221D] hover:bg-black/5">
+        Properties
+      </a>
+
+      <a href="#services"
+         class="rounded-xl px-4 py-3 text-sm font-medium text-[#25221D] hover:bg-black/5">
+        Services
+      </a>
+
+      <a href="#about"
+         class="rounded-xl px-4 py-3 text-sm font-medium text-[#25221D] hover:bg-black/5">
+        About
+      </a>
+
+      <a href="#contact"
+         class="rounded-xl px-4 py-3 text-sm font-medium text-[#25221D] hover:bg-black/5">
+        Contact
+      </a>
+
+    </nav>
+  </div>
+</header>
+<!-- HERO -->
+<section
+  id="home"
+  class="relative overflow-hidden bg-[#F5F1E8] px-5 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20"
+>
+  <div
+    class="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14"
+  >
+
+    <!-- Hero Content -->
+    <div class="z-10">
+      <span
+        class="mb-4 inline-block rounded-full border border-[#A6814C]/30 bg-[#A6814C]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B7355]"
+      >
+        Premium Real Estate
+      </span>
+
+      <h1
+        class="max-w-2xl text-4xl font-bold leading-[1.1] tracking-tight text-[#25221D] sm:text-5xl lg:text-6xl xl:text-7xl"
+      >
+        Find a place
+        <span class="text-[#A6814C]">you'll love</span>
+        to live.
+      </h1>
+
+      <p
+        class="mt-6 max-w-xl text-sm leading-7 text-[#6D665C] sm:text-base"
+      >
+        Discover exceptional properties, refined spaces, and homes designed
+        around the way you want to live.
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a
+          href="#properties"
+          class="rounded-full bg-[#25221D] px-7 py-3.5 text-center text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#A6814C]"
+        >
+          Explore Properties
+        </a>
+
+        <a
+          href="#about"
+          class="rounded-full border border-[#A6814C]/40 px-7 py-3.5 text-center text-sm font-semibold text-[#25221D] transition duration-300 hover:bg-[#A6814C] hover:text-white"
+        >
+          Discover Veyra
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="relative">
+      <div
+        class="absolute -inset-4 -z-10 rounded-[2rem] bg-[#A6814C]/10 blur-2xl"
+      ></div>
+
+      <div
+        class="relative overflow-hidden rounded-[2rem] border border-black/10 shadow-2xl"
+      >
+        <img
+          src=""
+          alt="Luxury modern villa"
+          class="h-[420px] w-full object-cover sm:h-[500px] lg:h-[600px] hero-banner"
+        />
+
+        <!-- Property Badge -->
+        <div
+          class="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/20 bg-black/35 p-4 text-white backdrop-blur-xl sm:left-auto sm:w-[280px]"
+        >
+          <p class="text-xs uppercase tracking-[0.2em] text-white/60">
+            Featured Property
+          </p>
+
+          <h3 class="mt-1 text-lg font-semibold">
+            The Veyra Residence
+          </h3>
+
+          <p class="mt-1 text-sm text-white/70">
+            Beverly Hills · California
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<main>
+    <!-- PROPERTY FILTERS -->
+
+<div class="mb-8 rounded-3xl border border-black/10 bg-white/60 p-5 shadow-sm backdrop-blur-xl sm:p-6">
+
+    <div class="mb-5">
+        <h2 class="text-xl font-bold text-[#25221D]">
+            Find Your Property
+        </h2>
+
+        <p class="mt-1 text-sm text-[#777067]">
+            Search and filter properties to find the perfect place.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Search -->
+
+        <div class="relative lg:col-span-2 z-90">
+
+    <label
+        for="property-search"
+        class="mb-2 block text-xs font-semibold uppercase tracking-[0.15em] text-[#777067]"
+    >
+        Search
+    </label>
+
+    <input
+        id="property-search"
+        type="text"
+        placeholder="Search property..."
+        class="w-full rounded-2xl border border-black/10 bg-[#F5F1E8] px-4 py-3 text-sm text-[#25221D] outline-none transition focus:border-[#A6814C] focus:ring-2 focus:ring-[#A6814C]/20"
+    >
+
+    <div
+        class="search-result absolute left-0 right-0 top-full z-50 mt-2 max-h-60 overflow-y-auto rounded-2xl border border-black/10 bg-[#F5F1E8]/95 shadow-xl backdrop-blur-xl z-90"
+    ></div>
+
+</div>
+
+
+        <!-- Type -->
+
+        <div>
+            <label
+                for="property-type"
+                class="mb-2 block text-xs font-semibold uppercase tracking-[0.15em] text-[#777067]"
+            >
+                Type
+            </label>
+
+            <select
+                id="property-type"
+                class="w-full rounded-2xl border border-black/10 bg-[#F5F1E8] px-4 py-3 text-sm text-[#25221D] outline-none transition focus:border-[#A6814C] focus:ring-2 focus:ring-[#A6814C]/20"
+            >
+                <option value="all">All Types</option>
+                <option value="Villa">Villa</option>
+                <option value="House">House</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Estate">Estate</option>
+            </select>
+        </div>
+
+
+        <!-- Location -->
+
+        <div>
+            <label
+                for="property-location"
+                class="mb-2 block text-xs font-semibold uppercase tracking-[0.15em] text-[#777067]"
+            >
+                Location
+            </label>
+
+            <input
+                id="property-location"
+                type="text"
+                placeholder="e.g. California"
+                class="w-full rounded-2xl border border-black/10 bg-[#F5F1E8] px-4 py-3 text-sm text-[#25221D] outline-none transition focus:border-[#A6814C] focus:ring-2 focus:ring-[#A6814C]/20"
+            >
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<div
+    class="products-area grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+>
+</div>
+    <div class="products-area grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+    </div>
+<!-- INSPECT MODAL -->
+<div
+    class="inspect-card fixed inset-0 z-[999] hidden items-center justify-center bg-black/40 p-5 backdrop-blur-xl sm:p-8"
+>
+    <div
+        class="inspect-content relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-[2rem] border border-white/20 bg-[#F5F1E8] shadow-2xl"
+    >
+    </div>
+</div>
+<section id="about" class="bg-[#25221D] px-5 py-20 sm:px-8 lg:px-12">
+  <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-20">
+
+    <!-- Image -->
+    <div class="relative">
+      <div class="absolute -inset-4 rounded-[2rem] bg-[#A6814C]/10 blur-2xl"></div>
+
+      <div class="relative overflow-hidden rounded-[2rem] border border-white/10">
+        <img
+          src=""
+          alt="Luxury Veyra property"
+          class="about-banner h-[420px] w-full object-cover sm:h-[500px]"
+        />
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div>
+      <span
+        class="inline-block rounded-full border border-[#A6814C]/30 bg-[#A6814C]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#C49A44]"
+      >
+        About Veyra
+      </span>
+
+      <h2
+        class="mt-5 text-4xl font-bold leading-tight text-white sm:text-5xl"
+      >
+        More than a home.
+        <span class="text-[#C49A44]">A place to belong.</span>
+      </h2>
+
+      <p class="mt-6 max-w-xl text-sm leading-7 text-white/60 sm:text-base">
+        At Veyra Estates, we believe finding a home should feel as exceptional
+        as the home itself. We connect people with carefully selected
+        properties designed around comfort, character, and modern living.
+      </p>
+
+      <p class="mt-4 max-w-xl text-sm leading-7 text-white/60 sm:text-base">
+        From refined city residences to private luxury estates, every property
+        in our collection is selected with attention to quality, location, and
+        timeless design.
+      </p>
+
+      <a
+        href="#properties"
+        class="mt-8 inline-block rounded-full bg-[#C49A44] px-7 py-3.5 text-sm font-semibold text-[#25221D] transition duration-300 hover:-translate-y-1 hover:bg-white"
+      >
+        Explore Our Properties
+      </a>
+    </div>
+
+  </div>
+</section>
+<section id="locations" class="bg-[#F5F1E8] px-5 py-20 sm:px-8 lg:px-12">
+  <div class="mx-auto max-w-7xl">
+
+    <!-- Heading -->
+    <div class="max-w-2xl">
+      <span class="inline-block rounded-full border border-[#A6814C]/30 bg-[#A6814C]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#8B7355]">
+        Our Locations
+      </span>
+
+      <h2 class="mt-5 text-4xl font-bold leading-tight text-[#25221D] sm:text-5xl">
+        Find your place in
+        <span class="text-[#A6814C]">the right city.</span>
+      </h2>
+
+      <p class="mt-5 max-w-xl text-sm leading-7 text-[#777067] sm:text-base">
+        Explore exceptional properties across some of the most desirable
+        locations in the United States.
+      </p>
+    </div>
+
+    <!-- Locations -->
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- California -->
+      <div class="group relative overflow-hidden rounded-[2rem] border border-black/10 shadow-sm">
+        <img
+          src=""
+          alt="California"
+          class="h-80 w-full object-cover transition duration-700 group-hover:scale-105 creal"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <p class="text-xs uppercase tracking-[0.2em] text-white/60">
+            West Coast
+          </p>
+          <h3 class="mt-1 text-2xl font-semibold">
+            California
+          </h3>
+          <p class="mt-2 text-sm text-white/70">
+            Los Angeles · Beverly Hills · Malibu
+          </p>
+        </div>
+      </div>
+
+      <!-- Florida -->
+      <div class="group relative overflow-hidden rounded-[2rem] border border-black/10 shadow-sm">
+        <img
+          src=""
+          alt="Florida"
+          class="h-80 w-full object-cover transition duration-700 group-hover:scale-105 freal"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <p class="text-xs uppercase tracking-[0.2em] text-white/60">
+            Southeast
+          </p>
+          <h3 class="mt-1 text-2xl font-semibold">
+            Florida
+          </h3>
+          <p class="mt-2 text-sm text-white/70">
+            Miami · Palm Beach · Orlando
+          </p>
+        </div>
+      </div>
+
+      <!-- New York -->
+      <div class="group relative overflow-hidden rounded-[2rem] border border-black/10 shadow-sm">
+        <img
+          src=""
+          alt="New York"
+          class="h-80 w-full object-cover transition duration-700 group-hover:scale-105 nreal"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+
+        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <p class="text-xs uppercase tracking-[0.2em] text-white/60">
+            East Coast
+          </p>
+          <h3 class="mt-1 text-2xl font-semibold">
+            New York
+          </h3>
+          <p class="mt-2 text-sm text-white/70">
+            Manhattan · Brooklyn · Queens
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+<footer class="border-t border-black/10 bg-[#25221D] text-white">
+
+  <!-- Main Footer -->
+  <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:px-12">
+
+    <!-- Brand -->
+    <div>
+      <div class="flex items-center gap-3">
+        <img
+          src=""
+          alt="Veyra Estates"
+          class="h-12 w-auto brightness-0 invert logof"
+        />
+
+        <div class="leading-none">
+          <span class="block text-lg font-bold tracking-[0.18em]">
+            VEYRA
+          </span>
+          <span class="text-[9px] tracking-[0.35em] text-[#C49A44]">
+            ESTATES
+          </span>
+        </div>
+      </div>
+
+      <p class="mt-6 max-w-sm text-sm leading-7 text-white/50">
+        Exceptional properties. Refined living.
+        Discover spaces designed around the way you want to live.
+      </p>
+
+      <div class="mt-7 flex gap-3">
+        <a
+          href="#"
+          class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition duration-300 hover:-translate-y-1 hover:border-[#C49A44] hover:bg-[#C49A44] hover:text-[#25221D]"
+        >
+          IG
+        </a>
+
+        <a
+          href="#"
+          class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition duration-300 hover:-translate-y-1 hover:border-[#C49A44] hover:bg-[#C49A44] hover:text-[#25221D]"
+        >
+          X
+        </a>
+
+        <a
+          href="#"
+          class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm text-white/60 transition duration-300 hover:-translate-y-1 hover:border-[#C49A44] hover:bg-[#C49A44] hover:text-[#25221D]"
+        >
+          IN
+        </a>
+      </div>
+    </div>
+
+    <!-- Explore -->
+    <div>
+      <h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-[#C49A44]">
+        Explore
+      </h3>
+
+      <nav class="mt-6 flex flex-col gap-4">
+        <a href="#home" class="text-sm text-white/50 transition hover:translate-x-1 hover:text-white">
+          Home
+        </a>
+        <a href="#properties" class="text-sm text-white/50 transition hover:translate-x-1 hover:text-white">
+          Properties
+        </a>
+        <a href="#locations" class="text-sm text-white/50 transition hover:translate-x-1 hover:text-white">
+          Locations
+        </a>
+        <a href="#about" class="text-sm text-white/50 transition hover:translate-x-1 hover:text-white">
+          About
+        </a>
+      </nav>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-[#C49A44]">
+        Services
+      </h3>
+
+      <nav class="mt-6 flex flex-col gap-4">
+        <a href="#" class="text-sm text-white/50 transition hover:translate-x-1 hover:text-white">
+          Buying
+        </a>
+        <a href="#" class="text-sm text-white/50 transition hover:translate-x-1 hover:text-white">
+          Selling
+        </a>
+        <a href="#" class="text-sm text-white/50 transition hover:translate-x-1 hover:text-white">
+          Property Management
+        </a>
+        <a href="#" class="text-sm text-white/50 transition hover:translate-x-1 hover:text-white">
+          Consultation
+        </a>
+      </nav>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-[#C49A44]">
+        Contact
+      </h3>
+
+      <div class="mt-6 space-y-4 text-sm text-white/50">
+        <p>
+          245 Madison Avenue<br />
+          New York, NY
+        </p>
+
+        <a
+          href="mailto:hello@veyraestates.com"
+          class="block transition hover:text-white"
+        >
+          hello@veyraestates.com
+        </a>
+
+        <a
+          href="tel:+12125550198"
+          class="block transition hover:text-white"
+        >
+          +1 (212) 555-0198
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-white/10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-6 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-12">
+
+      <p class="text-xs text-white/35">
+        © 2026 Veyra Estates. All rights reserved.
+      </p>
+      <p class="text-xs text-white/35" >Developed & Desgined By Mr-Mmdzp</p>
+      <div class="flex gap-6 text-xs text-white/35">
+        <a href="#" class="transition hover:text-white">
+          Privacy Policy
+        </a>
+        <a href="#" class="transition hover:text-white">
+          Terms of Service
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+<div
+  id="login-modal"
+  class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/60 p-5 backdrop-blur-md"
+>
+  <div
+    class="relative w-full max-w-md rounded-[2rem] border border-black/10 bg-[#F5F1E8] p-7 shadow-2xl sm:p-9"
+  >
+
+    <button
+      id="login-close"
+      class="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-black/5 text-2xl leading-none text-[#25221D] transition hover:rotate-90 hover:bg-black/10"
+    >
+      ×
+    </button>
+
+    <div class="mb-8">
+      <span
+        class="text-xs font-semibold uppercase tracking-[0.2em] text-[#A6814C]"
+      >
+        Welcome Back
+      </span>
+
+      <h2 class="mt-2 text-3xl font-bold text-[#25221D]">
+        Sign in to Veyra
+      </h2>
+
+      <p class="mt-2 text-sm text-[#777067]">
+        Access your saved properties and preferences.
+      </p>
+    </div>
+
+    <form class="space-y-5">
+
+      <div>
+        <label class="mb-2 block text-sm font-medium text-[#25221D]">
+          Email
+        </label>
+
+        <input
+          type="email"
+          placeholder="you@example.com"
+          class="w-full rounded-2xl border border-black/10 bg-white/70 px-4 py-3.5 text-sm outline-none transition focus:border-[#A6814C] focus:ring-2 focus:ring-[#A6814C]/20"
+        />
+      </div>
+
+      <div>
+        <label class="mb-2 block text-sm font-medium text-[#25221D]">
+          Password
+        </label>
+
+        <input
+          type="password"
+          placeholder="••••••••"
+          class="w-full rounded-2xl border border-black/10 bg-white/70 px-4 py-3.5 text-sm outline-none transition focus:border-[#A6814C] focus:ring-2 focus:ring-[#A6814C]/20"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="w-full rounded-2xl bg-[#25221D] py-3.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-[#A6814C]"
+      >
+        Sign In
+      </button>
+
+    </form>
+
+    <p class="mt-6 text-center text-xs text-[#777067]">
+      Don't have an account?
+      <a href="#" class="font-semibold text-[#A6814C] hover:underline">
+        Create one
+      </a>
+    </p>
+
+  </div>
+</div>
+<script src="script.js" ></script>
+</body>
+</html>

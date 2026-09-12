@@ -1,0 +1,89 @@
+{
+  "logo": "./Assists/images/logo.png",
+  "hbanner" : "./Assists/images/hero-banner.png",
+
+  "properties": [
+    {
+      "id": 1,
+      "title": "The Veyra Residence",
+      "location": "Beverly Hills, California",
+      "type": "Villa",
+      "price": 2450000,
+      "currency": "USD",
+      "beds": 4,
+      "baths": 3,
+      "area": 320,
+      "image": "./Assists/images/p-1.avif",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Modern Oak Residence",
+      "location": "Los Angeles, California",
+      "type": "House",
+      "price": 1850000,
+      "currency": "USD",
+      "beds": 3,
+      "baths": 2,
+      "area": 240,
+      "image": "./Assists/images/p-2.avif",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Azure Penthouse",
+      "location": "Miami, Florida",
+      "type": "Apartment",
+      "price": 3200000,
+      "currency": "USD",
+      "beds": 3,
+      "baths": 3,
+      "area": 280,
+      "image": "./Assists/images/p-3.avif",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Willow Creek Estate",
+      "location": "Austin, Texas",
+      "type": "Estate",
+      "price": 2750000,
+      "currency": "USD",
+      "beds": 5,
+      "baths": 4,
+      "area": 410,
+      "image": "./Assists/images/p-4.avif",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Central Park Residence",
+      "location": "New York, New York",
+      "type": "Apartment",
+      "price": 4100000,
+      "currency": "USD",
+      "beds": 4,
+      "baths": 3,
+      "area": 260,
+      "image": "./Assists/images/p-5.avif",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Golden Coast Villa",
+      "location": "Malibu, California",
+      "type": "Villa",
+      "price": 5200000,
+      "currency": "USD",
+      "beds": 5,
+      "baths": 5,
+      "area": 460,
+      "image": "./Assists/images/p-6.avif",
+      "featured": false
+    }
+  ],
+  "aboutBanner" : "./Assists/images/about-banner.jpg",
+  "realS1" : "./Assists/images/reals-1.jpg",
+  "realS2" : "./Assists/images/reals-2.jpg",
+  "realS3" : "./Assists/images/reals-3.jpg"
+}
